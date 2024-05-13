@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Programs</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo.png" />
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap icon link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Manrope", sans-serif;
+    }
+/* navbar */
+
+    .navbar p{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    #navbarTogglerDemo02 ul li a {
+      margin: 20px;
+      font-weight: 600;
+    }
+    #navbarTogglerDemo02 ul li a.active {
+      color: #4a6ddf;
+    }
+.btn a{
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 24px;
+}
+/* home */
+.coureses h4{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+.science p{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40px;
+}
+.career h4{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+.career p{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+}
+.every{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.mission p{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+.sana p{
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 32px;
+}
+.sana ul li{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 32px;
+}
+.msg h4{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+}
+.msg p{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.faq{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.lis{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+}
+.underlined {
+    position: relative;
+    display: inline-block !important;
+}
+
+.underlined::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    height: 7px;
+    width: 100% !important;
+    border: solid 8px #FFE142;
+    border-color: #FFE142 transparent transparent transparent ;
+    border-radius: 50%;
+}
+
+/* footer */
+
+footer {
+      background-color: #0b0b49;
+    }
+
+    /* .headings{
+      margin-left: 55px;
+    } */
+    .linkss h5,
+    .infoo h5 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    /* footer */
+    #quick-links p a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    #quick-links p a:hover {
+      text-decoration: underline rgb(219, 180, 6);
+    }
+
+    #quick-links p i {
+      font-size: 1rem;
+      color: rgb(223, 191, 10);
+    }
+
+    .line-height p {
+      line-height: 35px;
+
+    }
+
+    .heghtline span {
+      line-height: 30px;
+    }
+    .mail p{
+      margin-left: 5px;
+      margin-top: 2px;
+    }
+
+    .info {
+      position: relative;
+    }
+
+    .info li {
+      display: grid;
+      grid-template-columns: 10px 1fr;
+      margin-bottom: 16px;
+    }
+
+    .info li span:nth-child(1) {
+      color: #e6b20a;
+      font-size: 19px;
+      margin-left: -18px;
+      margin-top: 3px;
+    }
+
+    .info li span {
+      color: #fff;
+    }
+
+    .info a {
+      color: white;
+      text-decoration: none;
+    }
+/* home page */
+
+/* course */
+.science p{
+    display: inline-flex;
+    margin: 5%;
+}
+/* creer */
+.career h4{
+    display: inline-flex; 
+    margin: 10px;
+}
+/* home page / */
+
+
+/* accordian */
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: white;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    /* border: none; */
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border:  solid white;
+}
+
+:root, [data-bs-theme=light] {
+  --bs-border-color: white;
+
+}
+
+.accordion{
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem white;
+
+}
+
+.image-container{
+  overflow: hidden;
+}
+.image-container img{
+  transition: transform 900ms;
+  object-fit: cover;
+}
+.image-container:hover img{
+  transform: scale(1.2);
+}
+
+.exam{
+  cursor: pointer;
+}
+  </style>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Top Header -->
+
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <span class=" mx-auto text-white ">Sana Shaheen Group of Institutions , Hubli </span>
+      </div>
+    </nav>
+    <!-- Top Header /- -->
+    <nav class="navbar navbar-expand-lg mt-2">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="index.html" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="about.html">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="accademic_prgm.html">Academic Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="campus.html">Campus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="hostel.html">Hostel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="achivements.html">Achievements</a>
+            </li>
+          </ul>
+          <div>
+            <button class="btn btn-warning" type="submit"><i class="bi bi-telephone-fill m-2"></i><a href="tel:+91 9606299909"> Contact</a></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- Header /-->
+<!--here-section-->
+<div>
+    <div class="image-container">
+        
+  <img src="./images/academiccc-transformed.png" class="img-fluid" alt="...">
+  </div>
+  </div>
+<!--hero-section /-->
+
+<!--course offerd-->
+<div class="container mt-5 coureses">
+    <div class="row">
+        <h4>Courses  <span class="underlined">Offered</span> </h4>
+    </div>
+    <div class="row mt-4 science" >
+        <div class="col-lg-6 ">
+        <img src="./images/science.png" class="img-fluid" alt=""> 
+        <p>Science</p>
+    </div>
+    </div>
+    <div class="row mt-4 cominations">
+        <div class="col-lg-6">
+            <h5 class="text-primary">Combination I </h5>
+            <p>PCMB : PHYSICS, CHEMISTRY, MATHEMATICS, BIOLOGY</p>
+        </div>
+        <div class="col-lg-6">
+            <h5 class="text-primary">Combination II</h5>
+            <p> PCMB : PHYSICS, CHEMISTRY, MATHEMATICS, Computer Science</p>
+        </div>
+    </div>
+    <div class="row mt-3 ">
+        <div class="col-lg-6">
+            <div class="science">
+            <img src="./images/commers.png" class="img-fluid" alt="">
+            <p>Commerce</p>
+            </div>
+            <h5 class="text-primary mt-4">Combination I</h5>
+<p>BASE : Business Studies, Economics, Accountancy, Statistics</p> 
+       </div>
+    
+        <div class="col-lg-6 ">
+            <div class="science">
+            <img src="./images/arts.png" class="img-fluid" alt="">
+            <p>Arts</p>
+        </div>
+        <h5 class="text-primary mt-4">Combination I </h5>
+        <p>HEPS : History, Economics, Political Science and Sociology along with the Languages.</p>
+       </div>
+    </div>
+        
+    </div>
+</div>
+<!--course offerd /-->
+
+<!--career-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="career">
+            <img src="./images/cureer.png" class="img-fluid" alt="">
+            <h4 class="fw-bolder fs-2 ">Career Guidance Program</h4>
+            </div>
+            <p class="mt-4 every">Every year, a Career Guidance programme is conducted for the II PU students to update their knowledge about the various avenues in the field of Science and Technology. Subject experts from various fields are invited as resource persons for this programme.</p>
+            <div class="career mt-5">
+                <img src="./images/values.png" class="img-fluid" alt="">
+                <h4>Value Added Courses</h4>
+                <p class="mt-4">Sana Shaheen PUCollege functions with the belief that merely academic input is not sufficient for a student to succeed in life. Considering the challenges of the corporate world, the college has taken steps to train the students in the value added courses. This would help every student to develop a multi-faceted personality to become a cut above the rest.</p>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-5">
+            <img src="./images/academic-career.png" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+<!--career /-->
+
+<!--examination-->
+<div class="container mt-5">
+
+  <div class="row mission">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-4 mt-5 act">
+          <p class="section active fw-bolder exam" data-section="mission">Examination </p>
+        </div>
+        <div class="col-lg-4 mt-5 act">
+          <p class="section exam" data-section="vision">Attendance</p>
+        </div>
+        <div class="col-lg-4 mt-5 act">
+          <p class="section exam" data-section="values">Discipline</p>
+        </div>
+      </div>
+    </div>
+    <div class="row sana">
+      <div class="col-lg-7">
+        <p class="mt-4" id="infoText">To provide affordable quality education, by equipping students with knowledge and skills in their chosen stream, inculcate values, identify hidden talents, provide opportunities to realize their full potential and thus shape them into future professionals, entrepreneurs and above all good human beings
+      </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+    
+
+<!--princ msg-->
+<div class="container mt-5 msg">
+    <div class="row">
+        <div class="col-lg-6">
+<img src="./images/pincy.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 mt-5">
+            <h4 >Message  <span class="underlined">From Principal</span> </h4>
+            <p class="mt-4">Education is not an act of acquiring knowledge but learning a skill to lead life and forming one’s personality. This is an ennobling process of growth. I can boldly say that we have excelled in every initiative that we undertook and we have stood together in facing the challenges in realizing quality education. We focus on discovering, developing and drawing out the hidden talents and the magic lying dormant inside all of its students.</p>
+            <p>From academics to co-curricular activities, perseverance and a never-say-die spirit are entrenched in the heart of every student not only making them good students but brilliant human beings.</p>
+            <p>In today's dynamic world, a 360 degree development and grooming is of supreme importance and through our campus we are creating an environment for future leaders, entrepreneurs and professional who possess skills and aptitudes in an array of functional disciplines.</p>
+        </div>
+    </div>
+</div>
+<!--princ msg /-->
+
+<!--FAQ-->
+<div class="container mt-5 msg">
+    <div class="row">
+        <h4>FAQ</h4>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Parent guidance:
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body lis">
+            This is a one-on-one session to help parents to deal with the psychological needs of the child.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Group therapy: 
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body lis">
+            Helps students to perform while keeping in mind the collective goals of the group and individual.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Career guidance:
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body lis">
+            Guides students in choosing appropriate academic courses for a meaningful career.
+          </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+</div>
+<!--FAQ /-->
+
+
+  <!--Footer-->
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="linkss">
+            <h5 class="headings mt-5 text-white">Quick Links</h5>
+            <div class="row mt-3" id="quick-links">
+              <div class="col-lg-4">
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="index.html"> Home
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="about.html"> About
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="accademic_prgm.html"> Academic Programs
+                  </a>
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="campus.html"> 
+                    Campus
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="hostel.html"> Hostel
+
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="achivements.html">Achievements
+                  </a>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="infoo">
+            <h5 class="mt-5 text-white">Contact Information</h5>
+            <ul class="info mt-3">
+              <li class="heghtline">
+                <span><i class="bi bi-send-arrow-up-fill"></i></span>
+                <span>Shantiniketan, PB Rd, Shantiniketan Layout,Bairidevarkoppa, Hubballi, Karnataka
+                  580025</span>
+              </li>
+              <li class="line-height">
+                <span><i class="bi bi-telephone-fill"></i></span>
+                <p><a href="tel:+91 9606299909">+91 9606299909</a><br>
+                  <a href="tel:+91 9606299909">+91 9606299909</a>
+                </p>
+              </li>
+              <li class="mail">
+                <span><i class="bi bi-envelope-fill "></i></span>
+                <p><a href="mailto:shaheenhubballi@gmail.com">shaheenhubballi@gmail.com</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer /-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initially highlight "Our Mission" and set the paragraph text
+      displaySection('mission');
+  
+      var sectionItems = document.querySelectorAll('.section');
+      sectionItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          var section = this.getAttribute('data-section');
+          displaySection(section);
+        });
+      });
+    });
+  
+    function displaySection(section) {
+      var infoText = document.getElementById('infoText');
+      var sections = {
+        mission: " Periodic examinations are conducted to assess students’ assimilation of the subject and to enhance their performance. The number of examinations is as follows:<ul class='section-list'> <li>4 monthly tests of 25 marks each.</li> <li>1 Terminal Examination, 2 Preparatory Examinations for II PU and PU Board Examinations for both I & II PU students.</li><li>The academic work is supervised by the Correspondent, the Principal and a team of Class Guides.</li> </ul>",
+        vision: "<p>Attendance is taken at the commencement of each period and the student who is not there in the class is marked absent for the period.</p> As per the regulations of the PU Board, students attending less than 75% classes in any subject will not be allowed to take the Annual Examination/Board Examination. Leave of absence can be taken only when it is granted by the Principal.",
+        values: "To ensure smooth academic work and to maintain discipline in the college campus, students are requested to adhere to the following rules and regulations in addition to those that are in vogue from time to time by the college administration. Students must wear the college uniform daily in a neat and presentable manner. Details of uniform will be informed to the students and parents after completion of admission formalities.<ul><li>Every student has to possess and wear the Identity Card which should be produced whenever demanded by any staff member of the college.</li><li>Students should be punctual and regular to classes. They should be seated in the classroom before the teacher enters. Leave of absence should be obtained from the Principal well in advance. Unforeseen absence must be justified on return before entering the class.</li><li>Students are prohibited from bringing mobile phones and 2-wheelers or 4-wheelers to the college campus.</li><li>Unauthorised absence from classes will attract fine at the rate fixed from time to time by the college administration."
+      };
+  
+      // Highlight clicked section and update information text
+      var sectionItems = document.querySelectorAll('.section');
+      sectionItems.forEach(function(item) {
+        if (item.getAttribute('data-section') === section) {
+          item.classList.add('active');
+          item.style.color = 'blue';
+        } else {
+          item.classList.remove('active');
+          item.style.color = 'black';
+        }
+      });
+      infoText.innerHTML = sections[section]; // Use innerHTML to render HTML tags inside the paragraph
+    }
+  </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+  
+</body>
+
+</html>

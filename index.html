@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sana Shaheen</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo.png" />
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap icon link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+ <style>
+
+   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    * {
+      font-family: "Manrope", sans-serif;
+      /* box-sizing: border-box; */
+      /* overflow-x: hidden; */
+      /* width: 100%; */
+    }
+
+    .navbar p{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    #navbarTogglerDemo02 ul li a {
+      margin: 20px;
+      font-weight: 600;
+    }
+    #navbarTogglerDemo02 ul li a.active {
+      color: #4a6ddf;
+    }
+.btn a{
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 24px;
+}
+
+.underlined {
+    position: relative;
+    display: inline-block !important;
+}
+
+.underlined::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    height: 7px;
+    width: 100% !important;
+    border: solid 8px #FFE142;
+    border-color: #FFE142 transparent transparent transparent ;
+    border-radius: 50%;
+}
+
+/* footer */
+
+/* footer { */
+      /* background-color: #0b0b49;    } */
+    /* .headings{ */
+      /* margin-left: 55px; */
+    /* } */
+    /* .linkss h5, .infoo h5{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+    } */
+
+    #quick-links ul li a{
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    #quick-links ul li{
+      list-style: none;
+      margin: 15px;
+    }
+    #quick-links ul li i{
+      font-size: 1rem;
+      color: rgb(223, 191, 10);
+    }
+    #quick-links ul li i{
+      margin: 10px;
+    }
+    #information ul li i{
+      margin-right: 10px;
+    }
+    #information ul li{
+list-style: none;  
+  }
+  #information ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+  }
+  #information ul li{
+    margin: 15px;
+}
+#information ul li i{
+color: rgb(223, 191, 10);
+}
+
+.image-container{
+  overflow: hidden;
+}
+.image-container img{
+  transition: transform 900ms;
+  object-fit: cover;
+}
+.image-container:hover img{
+  transform: scale(1.2);
+}
+
+@keyframes moveUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px); /* Adjust the value for desired movement */
+      }
+    }
+
+    .animate_heartBeat {
+      animation: moveUpDown 3s ease infinite; /* Adjust the duration and easing as needed */
+    }
+
+    a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFE142;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+/* footer */
+
+footer {
+      background-color: #0b0b49;
+    }
+
+    /* .headings{
+      margin-left: 55px;
+    } */
+    .linkss h5,
+    .infoo h5 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    /* footer */
+    #quick-links p a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    #quick-links p a:hover {
+      text-decoration: underline rgb(219, 180, 6);
+    }
+
+    #quick-links p i {
+      font-size: 1rem;
+      color: rgb(223, 191, 10);
+    }
+
+    .line-height p {
+      line-height: 35px;
+
+    }
+
+    .heghtline span {
+      line-height: 30px;
+    }
+    .mail p{
+      margin-left: 5px;
+      margin-top: 2px;
+    }
+
+    .info {
+      position: relative;
+    }
+
+    .info li {
+      display: grid;
+      grid-template-columns: 10px 1fr;
+      margin-bottom: 16px;
+    }
+
+    .info li span:nth-child(1) {
+      color: #e6b20a;
+      font-size: 19px;
+      margin-left: -18px;
+      margin-top: 3px;
+    }
+
+    .info li span {
+      color: #fff;
+    }
+
+    .info a {
+      color: white;
+      text-decoration: none;
+    }
+
+    
+  .download-btn{
+    background-color: white;
+    color: #000;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #f1c73b;
+  }
+
+  .mission p{
+    cursor: pointer;
+  } 
+
+/* home page / */
+
+/* loading page */
+
+  </style>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Top Header -->
+
+     <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <span class=" mx-auto text-white ">Sana Shaheen Group of Institutions , Hubli </span>
+      </div>
+    </nav>
+    <!-- Top Header /- -->
+    <nav class="navbar navbar-expand-lg mt-2">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="about.html">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="accademic_prgm.html">Academic Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="campus.html">Campus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="hostel.html">Hostel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="achivements.html">Achievements</a>
+            </li>
+          </ul>
+          <div>
+            <button class="btn btn-warning" type="submit"><i class="bi bi-telephone-fill m-2"></i><a href="tel:+91 9606299909"> Contact</a></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header /-->
+
+
+  
+<!--here-section-->
+<div>
+  <div class="image-container">
+<img src="./images/homehome.png" class="img-fluid" alt="...">
+</div>
+</div>
+<!--hero-section /-->
+
+<!--about-->
+<div class="container mt-5 ">
+  <div class="row welcom">
+    <div class="col-lg-6 line">
+<h5 class="fw-bolder fs-2 lh-base"  data-aos="fade-right"data-aos-duration="1500">Welcome To <span class="underlined">  Sana Shaheen </span> Group of Institutions</h5>
+<p class="mt-4 fw-normal lh-lg fs-6 " data-aos="fade-right"data-aos-duration="2500">Sana Shaheen Independent PU College in association with the renowned Shaheen Institutions, Bidar and approved by the Government of Karnataka had its beginning in the Academic Year 2021- 22. The curriculum is strengthened and supplemented with coaching for Competitive Exams "JEE MAINS/NEET/PCET/CET" for Science combination, "CA/CS Foundation" and "Tally" for Commerce Combination.</p>
+<a href="accademic_prgm.html">
+<button  type="button" class="btn btn-warning mt-4" data-aos="fade-right"data-aos-duration="3000"><i class="bi bi-mortarboard-fill p-2"></i> Explore Courses</button> 
+</a> 
+</div>
+    <div class="col-lg-6 mt-5 mediengg">
+<img src="./images/home-4.png" class="img-fluid animate_heartBeat" alt="">
+<div class="text-center">
+  <a href="./fils/Brochure.pdf 1.png" download class="download-btn"><i class="bi bi-download"></i> Download</a>
+</div>
+    </div>
+  </div>
+  </div>
+<!--about /-->
+
+ 
+<div class="container mt-5">
+  <div class="row mission">
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-2 mt-3">
+          <img src="./images/missins.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-3 mt-5 act">
+          <div  data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"><p class="section active fw-bolder fs-5" data-section="mission">Our Mission</p></div>
+        </div>
+        <div class="col-lg-3 mt-5 act">
+          <p class="section fw-bolder fs-5" data-aos="fade-right" data-aos-easing="linear"
+          data-aos-duration="1300" data-section="vision">Our Vision</p>
+        </div>
+        <div class="col-lg-3 mt-5 act">
+          <p class="section fw-bolder fs-5" data-aos="fade-right" data-aos-easing="linear"
+          data-aos-duration="1500" data-section="values">Our Values</p>
+        </div>
+      </div>
+    </div>
+    <div class="row sana" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="col-lg-7">
+        <p class="mt-4 fw-normal lh-lg fs-6" id="infoText">To provide affordable quality education, by equipping students with knowledge and skills in their chosen stream, inculcate values, identify hidden talents, provide opportunities to realize their full potential and thus shape them into future professionals, entrepreneurs and above all good human beings</p>
+      </div>
+  </div>
+</div>   
+</div>
+<!--chaimen /-->
+
+<!--Managing Director-->
+<div class="container">
+<div class="row mt-5 hubli">
+  <h4>Sana Shaheen Hubli</h4>
+  <div class="row mt-3">
+    <div class="col-lg-4 mt-3">
+<img src="images/home-img-1.png" class="img-fluid" alt="">
+    </div>
+    <div class="col-lg-4 mt-4" >
+      <img src="images/home-img-2.png" class="img-fluid" alt="">
+    </div>
+    <div class="col-lg-4 mt-4"   data-aos-duration="2000">
+      <img src="images/home-img-3 1.png" class="img-fluid" alt="">
+    </div>
+  </div>
+</div>
+</div>
+<!--Managing Director /-->
+
+</div>
+  <!--Footer-->
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="linkss">
+            <h5 class="headings mt-5 text-white">Quick Links</h5>
+            <div class="row mt-3" id="quick-links">
+              <div class="col-lg-4">
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="index.html"> Home
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="about.html"> About
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="accademic_prgm.html"> Academic Programs
+                  </a>
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="campus.html"> 
+                    Campus
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="hostel.html"> Hostel
+
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="achivements.html">Achievements
+                  </a>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="infoo">
+            <h5 class="mt-5 text-white">Contact Information</h5>
+            <ul class="info mt-3">
+              <li class="heghtline">
+                <span><i class="bi bi-send-arrow-up-fill"></i></span>
+                <span>Shantiniketan, PB Rd, Shantiniketan Layout,Bairidevarkoppa, Hubballi, Karnataka
+                  580025</span>
+              </li>
+              <li class="line-height">
+                <span><i class="bi bi-telephone-fill"></i></span>
+                <p><a href="tel:+91 9606299909">+91 9606299909</a><br>
+                  <a href="tel:+91 9606299909">+91 9606299909</a>
+                </p>
+              </li>
+              <li class="mail">
+                <span><i class="bi bi-envelope-fill "></i></span>
+                <p><a href="mailto:shaheenhubballi@gmail.com">shaheenhubballi@gmail.com</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer /-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initially highlight "Our Mission" and set the paragraph text
+      displaySection('mission');
+  
+      var sectionItems = document.querySelectorAll('.section');
+      sectionItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          var section = this.getAttribute('data-section');
+          displaySection(section);
+        });
+      });
+    });
+  
+    function displaySection(section) {
+      var infoText = document.getElementById('infoText');
+      var sections = {
+        mission: "To strive for quality education in keeping with the motto of the college, “Excellence in Education” and prepare young minds for imbibing knowledge, skills and sensitivity.",
+        vision: "To provide affordable quality education, while equipping students with knowledge and skills in their chosen stream, inculcate values, identify hidden talents, provide opportunities for students to realize their full potential and thus shape them into future professional, entrepreneurs and above all good human beings.",
+        values: "Values specially moral values play an essential role in any stundent's life.  They help build a positive character with traits such as compassion, respect, kindness, and humility.  Values also help in shaping student’s attitudes and beliefs towards various aspects of life and provide them with a unique perspective."
+      };
+  
+      // Highlight clicked section and update information text
+      var sectionItems = document.querySelectorAll('.section');
+      sectionItems.forEach(function(item) {
+        if (item.getAttribute('data-section') === section) {
+          item.classList.add('active');
+          item.style.color = 'blue';
+        } else {
+          item.classList.remove('active');
+          item.style.color = 'black';
+        }
+      });
+      infoText.innerText = sections[section];
+    }
+  </script>
+<!--jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--1. owl carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>
